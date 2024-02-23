@@ -1,0 +1,81 @@
+@import './../../styles/contants.scss';
+
+.wrapper {
+
+    .container {
+   
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            padding: 0 3rem 0 3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
+
+            >:nth-child(2){
+                font-weight: 500;
+                font-size: 1.9rem;
+                color: orange;
+            }
+
+        }
+        
+        .right{
+            display: flex;
+            flex-direction: column;
+        
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
+            padding: 0 3rem 0 3rem;
+        
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+
+                input{
+                    width: 20rem;
+                    height: 2rem;
+                    padding: 0.3rem;
+                    outline: none;
+                    border: 2px solid orange;
+                    border-radius: 8px;
+                    font-size: 16px;
+                }
+                textArea {
+                    width: 20rem;
+                    height: 7rem;
+                    padding: 0.3rem;
+                    outline: none;
+                    border: 2px solid orange;
+                    border-radius: 8px;
+                    font-size: 16px;
+                }
+                button {
+                    
+                    border-radius: 30px;
+                    border: none;
+                    color: white;
+                    font-size: 16x;
+                    padding: 10px;
+                    background: orange;
+                    width: 5rem;
+                    height: 2.5rem;
+                    box-shadow: 0px 20px 24 3px rgba(251, 161, 41, 0.40);
+                    border: 1px solid white;
+                    
+
+                    &:hover {
+                    background: white;
+                    cursor: pointer;
+                    color: orange;
+                    border: 1px solid orange;
+                    }
+                    
+                }
+            }
+        }
+       }
+    }
